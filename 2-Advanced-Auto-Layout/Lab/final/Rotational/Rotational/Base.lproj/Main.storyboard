@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rotational" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNR-hF-hyx" userLabel="Container View">
+                                <rect key="frame" x="15" y="139" width="290" height="290"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="icon-rwdevcon2" translatesAutoresizingMaskIntoConstraints="NO" id="kHh-JS-hV3" userLabel="Top Left" customClass="RotatingImageView" customModule="Rotational" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="MM6-IU-jBB"/>
+                                            <constraint firstAttribute="height" constant="140" id="sK9-aB-HTB"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                <color key="value" red="0.023529411764705882" green="0.40784313725490196" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="defaultHorizontalConstraint" destination="qng-py-Et9" id="EUK-7P-iLr"/>
+                                            <outlet property="defaultVerticalConstraint" destination="bM4-Wc-dIv" id="nJU-MW-wPe"/>
+                                            <outlet property="nextUpdatingConstraint" destination="bM4-Wc-dIv" id="Iec-ay-wtf"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="icon-drink" translatesAutoresizingMaskIntoConstraints="NO" id="y38-ue-wdC" userLabel="Bottom Left" customClass="RotatingImageView" customModule="Rotational" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="150" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="3pj-bo-W8a"/>
+                                            <constraint firstAttribute="width" constant="140" id="uBq-jc-bwS"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="defaultHorizontalConstraint" destination="8Dd-DS-zex" id="guG-T4-VEl"/>
+                                            <outlet property="defaultVerticalConstraint" destination="Saw-Qi-QWV" id="FLs-O5-sU8"/>
+                                            <outlet property="nextUpdatingConstraint" destination="8Dd-DS-zex" id="TcX-Hg-CHQ"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="icon-eat" translatesAutoresizingMaskIntoConstraints="NO" id="Tmg-9H-iAP" userLabel="Bottom Right" customClass="RotatingImageView" customModule="Rotational" customModuleProvider="target">
+                                        <rect key="frame" x="150" y="150" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="cX3-1W-IeQ"/>
+                                            <constraint firstAttribute="width" constant="140" id="iEg-ou-Z7u"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="defaultHorizontalConstraint" destination="gH4-aG-PMT" id="Vm3-e2-4md"/>
+                                            <outlet property="defaultVerticalConstraint" destination="hwN-UW-Y7o" id="jbq-JF-czF"/>
+                                            <outlet property="nextUpdatingConstraint" destination="hwN-UW-Y7o" id="ITc-5S-5VW"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="icon-swift" translatesAutoresizingMaskIntoConstraints="NO" id="LNG-Eu-nsQ" userLabel="Top Right" customClass="RotatingImageView" customModule="Rotational" customModuleProvider="target">
+                                        <rect key="frame" x="150" y="0.0" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="F4o-SO-XVo"/>
+                                            <constraint firstAttribute="height" constant="140" id="MwX-T9-q8f"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="defaultHorizontalConstraint" destination="w3t-1F-j9N" id="TD3-hY-PYe"/>
+                                            <outlet property="defaultVerticalConstraint" destination="VJx-qi-F6p" id="efR-7q-HTE"/>
+                                            <outlet property="nextUpdatingConstraint" destination="w3t-1F-j9N" id="k4j-Cj-FnQ"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="y38-ue-wdC" firstAttribute="leading" secondItem="vNR-hF-hyx" secondAttribute="leading" id="8Dd-DS-zex"/>
+                                    <constraint firstAttribute="bottom" secondItem="kHh-JS-hV3" secondAttribute="bottom" priority="999" id="OsD-u0-ILE"/>
+                                    <constraint firstAttribute="bottom" secondItem="y38-ue-wdC" secondAttribute="bottom" id="Saw-Qi-QWV"/>
+                                    <constraint firstAttribute="bottom" secondItem="LNG-Eu-nsQ" secondAttribute="bottom" priority="999" id="SpQ-EU-rMR"/>
+                                    <constraint firstItem="LNG-Eu-nsQ" firstAttribute="top" secondItem="vNR-hF-hyx" secondAttribute="top" id="VJx-qi-F6p"/>
+                                    <constraint firstItem="y38-ue-wdC" firstAttribute="top" secondItem="vNR-hF-hyx" secondAttribute="top" priority="999" id="ZLo-bg-jtX"/>
+                                    <constraint firstAttribute="trailing" secondItem="y38-ue-wdC" secondAttribute="trailing" priority="999" id="az7-nL-Jrl"/>
+                                    <constraint firstItem="kHh-JS-hV3" firstAttribute="top" secondItem="vNR-hF-hyx" secondAttribute="top" id="bM4-Wc-dIv"/>
+                                    <constraint firstAttribute="height" constant="290" id="emv-EL-FRE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tmg-9H-iAP" secondAttribute="trailing" id="gH4-aG-PMT"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tmg-9H-iAP" secondAttribute="bottom" id="hwN-UW-Y7o"/>
+                                    <constraint firstItem="LNG-Eu-nsQ" firstAttribute="leading" secondItem="vNR-hF-hyx" secondAttribute="leading" priority="999" id="nX6-r8-Cwi"/>
+                                    <constraint firstAttribute="trailing" secondItem="kHh-JS-hV3" secondAttribute="trailing" priority="999" id="nzc-qO-yWu"/>
+                                    <constraint firstItem="Tmg-9H-iAP" firstAttribute="leading" secondItem="vNR-hF-hyx" secondAttribute="leading" priority="999" id="ocn-qO-neO"/>
+                                    <constraint firstItem="kHh-JS-hV3" firstAttribute="leading" secondItem="vNR-hF-hyx" secondAttribute="leading" id="qng-py-Et9"/>
+                                    <constraint firstAttribute="width" constant="290" id="rEY-uo-Rh0"/>
+                                    <constraint firstAttribute="trailing" secondItem="LNG-Eu-nsQ" secondAttribute="trailing" id="w3t-1F-j9N"/>
+                                    <constraint firstItem="Tmg-9H-iAP" firstAttribute="top" secondItem="vNR-hF-hyx" secondAttribute="top" priority="999" id="wQt-6f-BjH"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VGv-QU-gzq" appends="YES" id="RGJ-tP-OUc"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vNR-hF-hyx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vd3-Lz-hsM"/>
+                            <constraint firstItem="vNR-hF-hyx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wO5-PM-Ffu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="imageViews" destination="kHh-JS-hV3" collectionClass="NSMutableArray" id="Pb0-lR-EM9"/>
+                        <outletCollection property="imageViews" destination="y38-ue-wdC" collectionClass="NSMutableArray" id="u5n-kb-gaO"/>
+                        <outletCollection property="imageViews" destination="Tmg-9H-iAP" collectionClass="NSMutableArray" id="dbV-cS-GJT"/>
+                        <outletCollection property="imageViews" destination="LNG-Eu-nsQ" collectionClass="NSMutableArray" id="A4p-Uu-9bY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VGv-QU-gzq">
+                    <connections>
+                        <action selector="rotate" destination="BYZ-38-t0r" id="KYb-zf-OnL"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-drink" width="150" height="150"/>
+        <image name="icon-eat" width="150" height="150"/>
+        <image name="icon-rwdevcon2" width="150" height="150"/>
+        <image name="icon-swift" width="150" height="150"/>
+    </resources>
+</document>

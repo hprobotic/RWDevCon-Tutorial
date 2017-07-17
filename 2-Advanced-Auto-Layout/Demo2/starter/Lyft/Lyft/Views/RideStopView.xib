@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RideStopView" customModule="Lyft" customModuleProvider="target">
+            <connections>
+                <outlet property="addressLabel" destination="khu-bL-9Ea" id="6Sq-RT-4TD"/>
+                <outlet property="horizontalSeparator" destination="zrt-Ut-5hf" id="k6y-VT-hzU"/>
+                <outlet property="newRowButton" destination="rYm-hg-2Uo" id="hcQ-Bw-1ky"/>
+                <outlet property="verticalSeparator" destination="6iQ-ad-oK0" id="8Xi-ES-1NS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="b08-mm-PQV" userLabel="Ride stop view">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" text="&lt;185 Berry St&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khu-bL-9Ea" userLabel="Address Label">
+                    <rect key="frame" x="48" y="13" width="220" height="20"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="EeR-pO-NX7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000300000001" green="0.2039215714" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrt-Ut-5hf" userLabel="Horizontal Separator">
+                    <rect key="frame" x="48" y="45" width="252" height="0.0"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.86274509799999999" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Hh0-GP-Je3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6iQ-ad-oK0" userLabel="Vertical separator">
+                    <rect key="frame" x="22" y="35" width="1" height="20"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.86274509799999999" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="oEZ-f1-gkC"/>
+                        <constraint firstAttribute="height" constant="20" id="snX-ss-J24"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_dot" translatesAutoresizingMaskIntoConstraints="NO" id="ogb-zq-Ucj">
+                    <rect key="frame" x="19" y="19" width="8" height="8"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYm-hg-2Uo">
+                    <rect key="frame" x="276" y="12" width="14" height="22"/>
+                    <state key="normal" image="plus"/>
+                    <connections>
+                        <action selector="addIconTapped" destination="-1" eventType="touchUpInside" id="0sY-OC-YMa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="khu-bL-9Ea" firstAttribute="leading" secondItem="zrt-Ut-5hf" secondAttribute="leading" id="1TA-Gm-G7q"/>
+                <constraint firstItem="khu-bL-9Ea" firstAttribute="centerY" secondItem="b08-mm-PQV" secondAttribute="centerY" id="1qS-x1-vYp"/>
+                <constraint firstItem="6iQ-ad-oK0" firstAttribute="leading" secondItem="b08-mm-PQV" secondAttribute="leading" constant="22" id="74H-rs-Vx9"/>
+                <constraint firstItem="6iQ-ad-oK0" firstAttribute="centerY" secondItem="zrt-Ut-5hf" secondAttribute="centerY" id="DTo-EV-ipV"/>
+                <constraint firstItem="rYm-hg-2Uo" firstAttribute="centerY" secondItem="b08-mm-PQV" secondAttribute="centerY" id="Ezt-3a-nu8"/>
+                <constraint firstItem="ogb-zq-Ucj" firstAttribute="centerY" secondItem="khu-bL-9Ea" secondAttribute="centerY" id="Hiu-fu-JPa"/>
+                <constraint firstItem="rYm-hg-2Uo" firstAttribute="leading" secondItem="khu-bL-9Ea" secondAttribute="trailing" constant="8" symbolic="YES" id="MR7-7y-hTR"/>
+                <constraint firstAttribute="trailing" secondItem="zrt-Ut-5hf" secondAttribute="trailing" id="QPx-gr-jeY"/>
+                <constraint firstAttribute="bottom" secondItem="zrt-Ut-5hf" secondAttribute="bottom" id="Zag-2O-Usk"/>
+                <constraint firstItem="zrt-Ut-5hf" firstAttribute="leading" secondItem="b08-mm-PQV" secondAttribute="leading" constant="48" id="bFV-pd-x2h"/>
+                <constraint firstItem="ogb-zq-Ucj" firstAttribute="centerX" secondItem="6iQ-ad-oK0" secondAttribute="centerX" id="blf-3Y-LTb"/>
+                <constraint firstAttribute="trailing" secondItem="rYm-hg-2Uo" secondAttribute="trailing" constant="10" id="eLf-EZ-KGO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="526" y="-75.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="location_dot" width="8" height="8"/>
+        <image name="plus" width="14" height="14"/>
+    </resources>
+</document>

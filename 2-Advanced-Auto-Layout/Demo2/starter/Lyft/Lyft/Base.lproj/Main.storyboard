@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="Lyft" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqD-H9-QDw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iPg-ta-KeJ" customClass="RideConfigurationWidget" customModule="Lyft" customModuleProvider="target">
+                                <rect key="frame" x="7" y="355.5" width="306" height="146.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deG-oa-Pkx" customClass="Button" customModule="Lyft" customModuleProvider="target">
+                                <rect key="frame" x="9" y="509" width="302" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NNJ-oB-b9G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Request Lyft"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                        <color key="value" red="1" green="0.0" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="deG-oa-Pkx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="9" id="1hD-TF-mLP"/>
+                            <constraint firstAttribute="trailing" secondItem="deG-oa-Pkx" secondAttribute="trailing" constant="9" id="3Dk-Xf-E7K"/>
+                            <constraint firstAttribute="trailing" secondItem="eqD-H9-QDw" secondAttribute="trailing" id="CGs-J5-erh"/>
+                            <constraint firstAttribute="trailing" secondItem="iPg-ta-KeJ" secondAttribute="trailing" constant="7" id="ElG-Id-Hxm"/>
+                            <constraint firstItem="iPg-ta-KeJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="7" id="bwd-1w-13i"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="deG-oa-Pkx" secondAttribute="bottom" constant="9" id="del-ph-n2O"/>
+                            <constraint firstItem="deG-oa-Pkx" firstAttribute="top" secondItem="iPg-ta-KeJ" secondAttribute="bottom" constant="7" id="eOP-jB-rjT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eqD-H9-QDw" secondAttribute="bottom" id="j5L-oV-GNe"/>
+                            <constraint firstItem="eqD-H9-QDw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ukl-7M-sDy"/>
+                            <constraint firstItem="eqD-H9-QDw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="whZ-da-7Of"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="eqD-H9-QDw" id="sWC-re-Ghq"/>
+                        <outlet property="rideConfigurationWidget" destination="iPg-ta-KeJ" id="k5v-Nm-VVn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="138.38028169014083"/>
+        </scene>
+    </scenes>
+</document>
